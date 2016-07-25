@@ -1,6 +1,9 @@
+/*
+	Author: Fernando Herrera
+	Descripcion: Archivo de configuracion del grunt
+	Nota: Este archivo debe de estar en la raiz... este es un simple backup
+ */
 module.exports = function(grunt) {
-  // Do grunt-related things in here
-
 
   grunt.initConfig({
     
@@ -13,7 +16,7 @@ module.exports = function(grunt) {
           hostname: 'localhost',
           base: 'app-dev/',
           livereload: true,
-          open: true
+          open: false
         }
       }
     },
@@ -44,10 +47,20 @@ module.exports = function(grunt) {
     },
     copy: {
       config: {
-        files: [{
+        files: [{  //---- Back up de los archivos de configuracion
           expand: true,
           src: ['Gruntfile.js','package.json'],
           dest: 'app-dev/'
+        },
+        {  // -- Mover los archivos de librerias de angular
+          expand: true,
+          flatten: true,
+          src: [
+              'node_modules/angular/angular.min.js',
+              'node_modules/angular-cookies/angular-cookies.min.js'
+              ],
+          dest: 'app-dev/assets/libs/',
+          filter: 'isFile'
         }]
       },
       js: {
@@ -108,7 +121,8 @@ module.exports = function(grunt) {
 
 
   // Default task(s).
-  grunt.registerTask('default', ['copy:config', 'connect', 'watch']);
+  //grunt.registerTask('default', ['copy:config', 'connect', 'watch']);
+  grunt.registerTask('default', ['copy:config']);
 
 
 };
