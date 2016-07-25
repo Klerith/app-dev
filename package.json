@@ -1,0 +1,22 @@
+{
+  "name": "master-app",
+  "version": "1.0.0",
+  "description": "Estructura de archivos y carpetas del proyecto",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "connect-livereload": "^0.5.4",
+    "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
