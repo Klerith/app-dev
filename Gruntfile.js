@@ -3,7 +3,20 @@ module.exports = function(grunt) {
 
 
   grunt.initConfig({
+    
     pkg: grunt.file.readJSON('package.json'),
+    
+    connect: {
+      all: {
+        options: {
+          port: 9000,
+          hostname: 'localhost',
+          base: 'app-dev/',
+          livereload: true,
+          open: true
+        }
+      }
+    },
     watch: {
       options: {
         livereload: true
@@ -70,16 +83,6 @@ module.exports = function(grunt) {
           'dist/contact.html': 'src/contact.html'
         }
       }
-    },
-    connect: {
-      server: {
-        options: {
-          port: 3001,
-          livereload: true,
-          open: true,
-          base: 'app-dev/'
-        }
-      }
     }
   });
 
@@ -102,11 +105,10 @@ module.exports = function(grunt) {
   // Conectar a un servidor we
   grunt.loadNpmTasks('grunt-contrib-connect');
 
-  require('connect-livereload')();
 
 
   // Default task(s).
-  grunt.registerTask('default', ['connect', 'copy:config', 'watch']);
+  grunt.registerTask('default', ['copy:config', 'connect', 'watch']);
 
 
 };
