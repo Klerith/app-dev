@@ -57,7 +57,8 @@ module.exports = function(grunt) {
           flatten: true,
           src: [
               'node_modules/angular/angular.min.js',
-              'node_modules/angular-cookies/angular-cookies.min.js'
+              'node_modules/angular-cookies/angular-cookies.min.js',
+              'node_modules/angular-ui-router/release/angular-ui-router.min.js'
               ],
           dest: 'app-dev/assets/libs/',
           filter: 'isFile'
@@ -122,7 +123,7 @@ module.exports = function(grunt) {
 
   // Default task(s).
   //grunt.registerTask('default', ['copy:config', 'connect', 'watch']);
-  grunt.registerTask('default', ['copy:config']);
+  grunt.registerTask('default', ['copy:config','connect','watch']);
 
 
 };
