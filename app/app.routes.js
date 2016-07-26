@@ -1,29 +1,34 @@
-var myApp = angular.module('helloworld', ['ui.router']);
+/*
+ * Enrutador de la aplicación
+ *
+ *
+ */
 
-myApp.config(function($urlRouterProvider, $stateProvider) {
+hazskApp.config(function($urlRouterProvider, $stateProvider) {
 
   $urlRouterProvider
-        .otherwise('/hello');
+        .otherwise('/');
 
   $stateProvider
-  	.state('hello',{
-		    url:'/hello',
-		    templateUrl:'app/componentes/hello/view.html'
+  	.state('dashboard',{
+		    url:'/',
+		    // template: '<h1> <i clas="fa fa-edit"></i> Bienvenidos</h1>'
+		    templateUrl: COMPONENTES + 'dashboard/view.html'
 		    // controller:'helloController',
 		})
-  	.state('about',{
-		    url:'/about',
-		    templateUrl:'app/componentes/about/view.html'
-		    // controller:'aboutController',
+  	.state('login',{
+		    url:'/login',
+		    templateUrl: COMPONENTES + 'login/view.html',
+		    controller:'loginCtrl',
 		})
   	.state('blog',{
 		    url:'/blog/:blogID',
-		    templateUrl:'app/componentes/blog/view.html',
+		    templateUrl: COMPONENTES + 'blog/view.html',
 		    controller:'blogCtrl'
 		})	
   	.state('blog.detalle',{
 		    url:'/blog/:blogID',
-		    templateUrl:'app/componentes/blog/blog.detalle.html',
+		    templateUrl: COMPONENTES + 'blog/blog.detalle.html',
 		    // controller:'blogCtrl'
 		})
 

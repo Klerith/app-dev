@@ -1,0 +1,29 @@
+
+<div class="lock-wrapper animated fadeIn fast">
+
+    <div id="time" class="animated fadeIn">{{ hora }}</div>
+
+    <form role="form" class="form-inline" ng-submit="login(loginFrm)">
+        <div class="lock-box text-center">
+
+            <div class="lock-name">
+                <input type="text" ng-model="loginFrm.user" placeholder="Usuario" id="exampleInputPassword2" class="form-control lock-input">
+            </div>
+            
+            <img src="assets/img/lock_thumb.jpg" alt="lock avatar"/>
+            
+            <div class="lock-pwd">
+            
+                <div class="form-group">
+                    <input type="password" ng-model="loginFrm.pass" placeholder="Contraseña" id="exampleInputPassword2" class="form-control lock-input">
+                    
+                    <button class="btn btn-lock" type="submit">
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+</div>

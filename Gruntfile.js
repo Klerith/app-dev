@@ -63,7 +63,7 @@ module.exports = function(grunt) {
           dest: 'app-dev/assets/libs/',
           filter: 'isFile'
         }]
-      },
+     },
       js: {
         files: [
           // includes files within path and its sub-directories 
