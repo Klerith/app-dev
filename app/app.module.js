@@ -1,2 +1,1 @@
-console.log('Hola mundo');
-
+var myApp = angular.module('helloworld', ['ui.router']);
