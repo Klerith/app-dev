@@ -35,3 +35,4 @@ hazskApp.config(function($urlRouterProvider, $stateProvider) {
 
 
 });
+
