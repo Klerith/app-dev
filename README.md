@@ -4,6 +4,9 @@ Creacion de la carpeta principal
 
 NOTA: Cuando se empiece un programa nuevo con este template
 
+
+npm install
+
 npm install grunt --save-dev
 
 npm install grunt-contrib-watch --save-dev
