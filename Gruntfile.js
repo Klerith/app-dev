@@ -36,7 +36,14 @@ module.exports = function(grunt) {
         options: {
           livereload: true
         },
-      }
+      },
+      css: {
+        files: ['app-dev/**/*.css'],
+        options: {
+          livereload: true
+        },
+      },
+
     },
     uglify: {
       src: {

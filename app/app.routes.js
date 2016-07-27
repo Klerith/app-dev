@@ -16,11 +16,6 @@ hazskApp.config(function($urlRouterProvider, $stateProvider) {
 		    templateUrl: COMPONENTES + 'dashboard/view.html'
 		    // controller:'helloController',
 		})
-  	.state('login',{
-		    url:'/login',
-		    templateUrl: COMPONENTES + 'login/view.html',
-		    controller:'loginCtrl',
-		})
   	.state('blog',{
 		    url:'/blog/:blogID',
 		    templateUrl: COMPONENTES + 'blog/view.html',
@@ -35,4 +30,3 @@ hazskApp.config(function($urlRouterProvider, $stateProvider) {
 
 
 });
-

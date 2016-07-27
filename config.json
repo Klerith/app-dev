@@ -2,6 +2,10 @@
 	"version": "1.0.0",
 	"autor": "hazsk",
 	"description": "Tenemos la respuesta",
+<<<<<<< HEAD
 	"titulo": "Colegio",
+=======
+	"titulo": "Ligas de Balboa",
+>>>>>>> separacion-login
 	"anio": 2016
 }
