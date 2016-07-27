@@ -1,0 +1,217 @@
+/*Template Name:BucketAdmin Dashboard build with Bootstrap v3+ Author: ThemeBucket*/
+/* Import fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+
+/*
+    Este archivo contiene los estilos que he personalizado 
+    manualmente para la aplicacion
+ */
+
+/* 
+  ================ 
+       Animaciones
+  ================   
+*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast{
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+
+/*
+  ================
+    Custom Login
+  ================
+*/
+.lock-name input {
+    width:72% !important;
+    margin-top:8px;
+    color:#626f81;
+    border-color: transparent;
+}
+
+.lock-name input:focus,.lock-name input:hover {
+    border-color:#fff;
+}
+
+.forgotPass{
+    position: relative;
+    top: 60px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+/*
+  ================
+    Del tema
+  ================
+*/
+
+html {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+body {
+    color:#767676;
+    background:#f1f2f7;
+    font-family:'Open Sans',sans-serif;
+    padding:0px !important;
+    margin:0px !important;
+    font-size:13px;
+    text-rendering:optimizeLegibility;
+}
+/*lock screen*/
+.lock-screen {
+    background: #1FB3A3 url("../images/lock-screen.jpg") no-repeat fixed 0 0 / cover;
+}
+.lock-wrapper {
+    margin:10% auto;
+    max-width:500px;
+}
+.lock-box {
+    position:relative;
+}
+.lock-name {
+    background:#fff;
+    width:50%;
+    float:left;
+    height:50px;
+    line-height:50px;
+    margin-top:55px;
+    padding:0 20px;
+    text-align:left;
+    border-radius:5px 0 0 5px;
+    -webkit-border-radius:5px 0 0 5px;
+    color:#1fb5ad;
+}
+.lock-pwd {
+    background:#fff;
+    width:50%;
+    float:right;
+    height:50px;
+    line-height:50px;
+    margin-top:55px;
+    padding:0 0 0 80px;
+    border-radius:0 5px 5px 0;
+    -webkit-border-radius:0 5px 5px 0;
+    color:#1fb5ad;
+}
+.lock-pwd input {
+    width:72% !important;
+    margin-top:6px;
+    color:#626f81;
+}
+.lock-pwd input:focus,.lock-pwd input:hover {
+    border-color:#fff;
+}
+.lock-wrapper img {
+    position:absolute;
+    left:33%;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    border:10px solid #fff;
+    width:160px;
+    height:160px;
+    background: #fff;
+}
+.lock-wrapper .locked {
+    margin-bottom:20px;
+    display:inline-block;
+    color:#026f7a;
+}
+.btn-lock,.btn-lock:hover {
+    background:#fff;
+    color:#626f81;
+    margin-top:-8px;
+}
+.lock-input {
+    width:83%;
+    border:none;
+    float:left;
+    margin-right:3px;
+}
+#time {
+    width:100%;
+    color:#fff;
+    font-size:125px;
+    margin-bottom:50px;
+    display:inline-block;
+    text-align:center;
+    font-family:'Lato',sans-serif;
+    font-weight: 100;
+}

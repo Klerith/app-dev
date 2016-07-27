@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>Lock Screen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/libs/bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css?1" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="lock-screen" onload="tic()">
+
+    <div class="lock-wrapper animated fadeIn fast">
+
+    <div id="time" class="animated fadeIn">...</div>
+
+      <form role="form" class="form-inline" id="frmLogin">
+          <div class="lock-box text-center">
+
+              <div class="lock-name">
+                  <input type="text" placeholder="Usuario" id="exampleInputPassword2" class="form-control lock-input">
+              </div>
+              
+              <img src="assets/images/lock_thumb.jpg" alt="lock avatar"/>
+              
+              <div class="lock-pwd">
+              
+                  <div class="form-group">
+                      <input type="password" placeholder="Contraseña" id="exampleInputPassword2" class="form-control lock-input">
+                      
+                      <button class="btn btn-lock" type="submit">
+                          <i class="fa fa-arrow-right" id="iconLoadin"></i>
+                      </button>
+                  </div>
+
+              </div>
+
+          </div>
+      </form>
+
+      <div class="forgotBox" align="center">
+        <a href="" class="forgotPass">Olvide su contraseña?</a>
+      </div>
+
+  </div>
+
+
+  <script src="assets/libs/jquery.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+
+</body>
+</html>

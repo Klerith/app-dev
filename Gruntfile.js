@@ -36,7 +36,14 @@ module.exports = function(grunt) {
         options: {
           livereload: true
         },
-      }
+      },
+      css: {
+        files: ['app-dev/**/*.css'],
+        options: {
+          livereload: true
+        },
+      },
+
     },
     uglify: {
       src: {
@@ -63,7 +70,7 @@ module.exports = function(grunt) {
           dest: 'app-dev/assets/libs/',
           filter: 'isFile'
         }]
-      },
+     },
       js: {
         files: [
           // includes files within path and its sub-directories 

@@ -1,15 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" ng-app="hazskApp" ng-controller="mainCtrl">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+
+	<!-- Angular: Librerias -->
+	<script src="assets/libs/angular.min.js"></script>
+	<script src="assets/libs/angular-ui-router.min.js"></script>
+
+	<!-- Scripts personalizados -->
+	<script src="app/scripts.js"></script>
+
+	<!-- Angular: Custom libraries -->
+	<script src="app/app.module.js"></script>
+	<script src="app/app.routes.js"></script>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="assets/libs/b3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/libs/b3/css/bootstrap-reset.css">
+
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style-responsive.css" />
+	
+	<!-- Estilos personalizados  -->
+	<link rel="stylesheet" href="assets/css/custom.css">
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
 	<title>App Dev</title>
 </head>
 <body>
-
-	<h1>Hola mundo</h1>
-	<p>
-		Probando..
-	</p>
 	
+	<section id="container">
+
+		<div ng-include="'app/shared/header/view.html'" ng-hide="enLogin"></div>
+		
+		<aside ng-include="'app/shared/sidebar/view.html'" ng-hide="enLogin"></aside>
+	
+		<section class="main-content" id="main-content">
+        	<section class="wrapper" id="main-wraper">
+				
+				<ui-view></ui-view>
+
+			</section>	
+		</section>
+
+
+	</section>
+	
+
+	
+
+	<!-- Scripts del final de la pagina -->
+	
+	<!-- jQuery -->
+	<script src="assets/libs/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="assets/libs/b3/js/bootstrap.min.js"></script>
+	
+	<!-- Angular controladores -->
+	<script src="app/componentes/login/controlador.js"></script>
+
+
+
+	<!-- Core Theme scripts -->
+	<script src="assets/js/jquery.dcjqaccordion.2.7.js"></script> 
+	<script src="assets/js/jquery.nicescroll.js"></script> 
+	<script src="assets/js/jquery.scrollTo.min.js"></script> 
+	<script src="assets/js/jquery.slimscroll.min.js"></script> 
 </body>
 </html>
